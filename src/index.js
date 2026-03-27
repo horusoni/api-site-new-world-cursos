@@ -80,7 +80,7 @@ app.post("/curriculo", upload.single("curriculo"), async (req, res) => {
         }
 
         const response = await sendMail({
-            to: process.env.EMAIL,
+            to: [process.env.EMAIL,"newworldcursosti@gmail.com"],
             subject: "NOVO CURRÍCULO",
             fromName: "New World Cursos",
             html: `
