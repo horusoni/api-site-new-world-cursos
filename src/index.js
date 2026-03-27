@@ -116,7 +116,7 @@ app.post("/matricula", async (req, res) => {
         }
 
         const response = await sendMail({
-            to: process.env.EMAIL,
+            to: [process.env.EMAIL,"newworldcursosti@gmail.com"],
             subject: "NOVA MATRÍCULA",
             fromName: "New World Cursos",
             html: `
