@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://www.newworldcursos.com.br", // depois você pode restringir
+    origin: "*", // depois você pode restringir
 }));
 
 // 🔥 multer em memória (OBRIGATÓRIO na Vercel)
